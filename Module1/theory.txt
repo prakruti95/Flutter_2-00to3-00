@@ -1,0 +1,38 @@
+Github Desktop Software:https://desktop.github.com/download/
+
+Git CMD: https://git-scm.com/install/
+
+Dart SDK: https://dart.dev/get-dart/archive
+
+Editor: IntelIJIDEA
+
+Path Set:
+D:\E_Driver\E Drive\software\dartsdk-windows-x64-release\dart-sdk\bin
+
+
+1)
+Search Environment Variables
+click on Environment Variables
+click on path in user variable 
+paste your path 
+click on OK
+
+2)
+Search Environment Variables
+click on Environment Variables
+click on path in system variable 
+paste your path 
+click on OK
+
+3)open your cmd
+dart
+dart --version
+
+4)
+Open IntelIJIDEA -> file -> settings -> plugins -> search dart
+->install -> restart your IDE
+
+5)
+
+ 
+
