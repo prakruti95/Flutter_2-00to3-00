@@ -1,0 +1,35 @@
+Looping Statement:
+for
+while
+do while
+for in
+for each
+
+1) for:
+for(initialization;condition;incre/decre)
+{
+	statement
+}
+
+2)while:
+initialization;
+
+while(condition)
+{
+ incre/decre
+ statements
+}
+
+
+Task:
+-> find out the sum of given number
+num=4567,1234
+op:22,10
+
+-> find out the table of given num
+
+
+
+
+
+
