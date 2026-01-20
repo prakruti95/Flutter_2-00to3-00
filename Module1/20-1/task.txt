@@ -1,0 +1,11 @@
+1)hierarchical in:
+Shape - area count 
+
+rec
+circle
+tri
+
+2)hybrid
+a,b,c,d->a*b*c->display
+
+
