@@ -1,0 +1,6 @@
+Collection
+
+List -> 
+Set -> duplicate data avoid
+Map -> Key & value pair
+
