@@ -1,0 +1,80 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import 'first.dart';
+
+class FormEx extends StatefulWidget
+{
+  @override
+  MyFormState createState() => MyFormState();
+}
+
+class MyFormState extends State<FormEx>
+{
+  TextEditingController myemail = TextEditingController();
+  TextEditingController mypass = TextEditingController();
+  var _formkey = GlobalKey<FormState>();
+  @override
+  Widget build(BuildContext context)
+  {
+    return Scaffold
+      (
+          appBar: AppBar(title: Text("My Form",style:TextStyle(color: Colors.white),),backgroundColor: Colors.blueGrey,),
+          body:Form
+            (
+              key: _formkey,
+              child: Padding(
+                padding: const EdgeInsets.all(48.0),
+                child: Center
+                  (
+                    child: Column
+                      (
+                        children:
+                        [
+                            TextFormField(controller:myemail,decoration: InputDecoration(hintText: "Enter Email",border: OutlineInputBorder()),validator:(value)
+                            {
+                              if(myemail.text.toString().isEmpty)
+                                {
+                                    return "Please Enter Email";
+                                }
+                            },),
+                            SizedBox(height: 10,),
+                            TextFormField(controller:mypass,decoration: InputDecoration(hintText: "Enter Password",border: OutlineInputBorder()),obscureText: true,
+                              validator: (value)
+                              {
+                                if(mypass.text.toString().isEmpty)
+                                {
+                                  return "Please Enter Password";
+                                }
+                              },
+                            ),
+                            SizedBox(height: 20,),
+                            TextButton(onPressed: ()
+                            {
+                                String email = myemail.text.toString();
+                                String pass = mypass.text.toString();
+                                if(_formkey.currentState!.validate())
+                                  {
+                                    if(email=="a@gmail.com" && pass=="1234")
+                                    {
+                                      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => FirstScreen(email:email)));
+                                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Login Success")));
+
+                                    }
+                                    else
+                                    {
+                                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Login Fail")));
+
+                                    }
+                                  }
+
+                            }, child: Text("Login",style: TextStyle(fontSize: 20.00),))
+                        ],
+                      ),
+                  ),
+              )
+            ),
+      );
+  }
+
+}
