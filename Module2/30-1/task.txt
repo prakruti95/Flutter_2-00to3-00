@@ -1,0 +1,30 @@
+screen1-
+Logged in as
+radio button
+1st admin 
+2nd user
+Button
+
+screen2-
+welcome,admin
+
+Text -> Menu
+TextFormField - Table No. [Validation]
+
+Checkbox1-pizza-Rs.100
+Checkbox2-burger-Rs.70
+Checkbox3-coffee-Rs.120
+Button
+
+Bill Display -> Dialog
+
+Backbutton -> dialog 
+confirm dialog -> are you sure you want to exit?
+
+
+
+
+
+
+
+
