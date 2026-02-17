@@ -1,0 +1,18 @@
+Task : Sqflite[Structure code]
+
+Splash Screen
+Login Screen
+Signup Screen
+From dashboard you can add amount from floating action button
+add screen:
+
+add category
+add expense amount
+
+
+in dashoard you can view details[Card],update and delete
+in delete use alertdialog for confirmation
+
+Add Sharedprefrence
+Logo Add
+upload all project in git using github actions
