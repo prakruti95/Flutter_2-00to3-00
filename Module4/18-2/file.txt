@@ -1,0 +1,19 @@
+API -> php file
+
+SQL file
+db,table
+hetvi_users
+
+index.php:
+echo "<h2>Payal API</h2>";
+echo "<ul>";
+echo "<li><a href='payal/connect.php'>connection</a></li>";
+echo "<li><a href='payal/connect.php'>connection</a></li>";
+echo "<li><a href='payal/connect.php'>connection</a></li>";
+echo "<li><a href='payal/connect.php'>connection</a></li>";
+echo "<li><a href='payal/connect.php'>connection</a></li>";
+
+echo "</ul>";
+
+
+
