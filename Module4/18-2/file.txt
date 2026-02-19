@@ -3,6 +3,19 @@ API -> php file
 SQL file
 db,table
 hetvi_users
+id
+name
+surname
+mobile
+email
+password
+
+hetvi_products
+id
+p_name
+p_price
+p_des
+p_location
 
 index.php:
 echo "<h2>Payal API</h2>";
